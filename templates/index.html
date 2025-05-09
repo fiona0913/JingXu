@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- 轮播图片区 -->
+<section class="carousel-section" style="display: flex; justify-content: center; margin-top: 3rem;">
+    <div id="carousel" style="position: relative; width: 500px; height: 320px; overflow: hidden; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.15);">
+        <img src="{{ url_for('static', filename='images/chair final.1.jpg') }}" class="carousel-img" style="width: 100%; height: 100%; object-fit: contain; position: absolute; left: 0; top: 0; opacity: 1; transition: opacity 0.5s;">
+        <img src="{{ url_for('static', filename='images/chair final.2.jpg') }}" class="carousel-img" style="width: 100%; height: 100%; object-fit: contain; position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.5s;">
+        <img src="{{ url_for('static', filename='images/chair final.56.jpg') }}" class="carousel-img" style="width: 100%; height: 100%; object-fit: contain; position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.5s;">
+        <img src="{{ url_for('static', filename='images/Slide 16_9 - 1.png') }}" class="carousel-img" style="width: 100%; height: 100%; object-fit: contain; position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.5s;">
+        <img src="{{ url_for('static', filename='images/包装+壶.8.jpg') }}" class="carousel-img" style="width: 100%; height: 100%; object-fit: contain; position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.5s;">
+        <!-- 你可以继续添加更多图片，只需复制上面一行并修改文件名 -->
+        <button onclick="prevSlide()" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: #fff; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.5rem; cursor: pointer;">&#8592;</button>
+        <button onclick="nextSlide()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: #fff; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.5rem; cursor: pointer;">&#8594;</button>
+    </div>
+</section>
+
+<script>
+let current = 0;
+const imgs = document.getElementsByClassName('carousel-img');
+function showSlide(idx) {
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].style.opacity = (i === idx) ? '1' : '0';
+    }
+}
+function prevSlide() {
+    current = (current - 1 + imgs.length) % imgs.length;
+    showSlide(current);
+}
+function nextSlide() {
+    current = (current + 1) % imgs.length;
+    showSlide(current);
+}
+// 自动轮播
+setInterval(() => { nextSlide(); }, 4000);
+</script>
+
+<!-- About Me 居中内容 -->
+<section class="about-me" style="display: flex; flex-direction: column; align-items: center; margin-top: 2rem;">
+    <h2>About Me</h2>
+    <div style="margin-top: 1.5rem; font-size: 1.1rem; color: #333; max-width: 700px; text-align: center;">
+        <p>
+            I am a <b>Product &amp; UI/UX Designer</b> based in Seattle.
+        </p>
+        <p style="margin-top: 1rem;">
+            By bringing together knowledge from these two areas, I aim to create user interfaces that are seamless and enjoyable. With my keen sense of aesthetics and attention to detail, I aim to create innovative and visually appealing designs that truly resonate with users. My design focuses not only on appearance, but also on <b>functionality and user experience</b> to ensure that every detail provides the <b>best interactive experience</b> for the user. You are welcome to explore my work and embark on a wonderful journey of design with me.
+        </p>
+        <div style="margin-top: 1.5rem;">
+            <div><b>EMAIL:</b> <a href="mailto:fiona09x@gmail.com">fiona09x@gmail.com</a> / <a href="mailto:jingx23@uw.edu">jingx23@uw.edu</a></div>
+            <div><b>MOBILE PHONE:</b> 415-999-8666</div>
+            <div><b>LINKEDIN:</b> <a href="https://www.linkedin.com/in/fionax09" target="_blank">www.linkedin.com/in/fionax09</a></div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
