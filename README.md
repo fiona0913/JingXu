@@ -45,3 +45,10 @@ The website will be available at `http://localhost:5000`
 - About section
 - Contact information
 - Social media links 
+
+<ul class="nav-links">
+    <li><a href="{{ url_for('uxui') }}">UI/UX</a></li>
+    <li><a href="{{ url_for('product') }}">Product Design</a></li>
+    <li><a href="{{ url_for('about') }}">About Me</a></li>
+    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+</ul> 

@@ -18,5 +18,13 @@ def projects():
 def contact():
     return render_template('contact.html')
 
+@app.route('/uxui')
+def uxui():
+    return render_template('uxui.html')
+
+@app.route('/product')
+def product():
+    return render_template('product.html')
+
 if __name__ == '__main__':
     app.run(debug=True) 

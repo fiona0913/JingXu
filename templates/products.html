@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section style="max-width: 1200px; margin: 3rem auto 0 auto;">
+    <!-- 顶部大标题和介绍 -->
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.5rem; font-weight: bold;">Projects</h1>
+        <p style="font-size: 1.2rem; color: #555; margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+            A selection of my product and UI/UX design works, focusing on innovative solutions, user experience, and visual storytelling. Each project demonstrates my process from research and ideation to prototyping and final delivery.
+        </p>
+    </div>
+    <!-- 项目卡片区 -->
+    <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: center;">
+        <!-- 项目1 -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/speaker2.png') }}" alt="ONE Speaker" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">ONE Speaker</h3>
+                <p style="color: #666; font-size: 1rem;">A portable speaker designed for immersive sound and modern aesthetics. Role: Product Designer</p>
+            </div>
+        </div>
+        <!-- 项目2 -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/chair final.1.jpg') }}" alt="Ergo Chair" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Ergo Chair</h3>
+                <p style="color: #666; font-size: 1rem;">An ergonomic chair project focused on comfort and sustainability. Role: Industrial Designer</p>
+            </div>
+        </div>
+        <!-- 项目3 -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/Slide 16_9 - 1.png') }}" alt="Campus Platform" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Campus Sales Platform</h3>
+                <p style="color: #666; font-size: 1rem;">A digital platform for campus product sales, designed with Figma and user research. Role: UI/UX Designer</p>
+            </div>
+        </div>
+        <!-- 可继续添加更多项目卡片 -->
+    </div>
+</section>
+{% endblock %} 

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section style="max-width: 1200px; margin: 3rem auto 0 auto;">
+    <!-- 顶部自我介绍 -->
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.5rem; font-weight: bold;">UI/UX Projects</h1>
+        <h2 style="font-size: 1.3rem; color: #444; margin-top: 1.2rem;">Hello, I'm JING XU</h2>
+        <p style="font-size: 1.1rem; color: #555; margin-top: 0.7rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+            An UI&UX designer, with Product design background, creating user interfaces with seamless experience and pleasure by integrating the knowledge of these two fields.
+        </p>
+    </div>
+    <!-- 项目卡片区 -->
+    <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: center;">
+        <!-- 项目1：0-1 MVP Mobile App Design -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/巴扎嘿素材3.png') }}" alt="0-1 MVP Mobile App Design" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem;">0-1 MVP Mobile App Design</h3>
+                <div style="color: #888; font-size: 0.98rem; margin-bottom: 0.3rem;">Internship &nbsp;|&nbsp; UX Design &nbsp;|&nbsp; Web Design</div>
+                <a href="#" style="color: #007bff; text-decoration: underline; font-size: 1rem;">Read More</a>
+            </div>
+        </div>
+        <!-- 项目2：MindEase IoT Project Design -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/Slide 16_9 - 5.png') }}" alt="MindEase IoT Project Design" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem;">MindEase IoT Project Design</h3>
+                <div style="color: #888; font-size: 0.98rem; margin-bottom: 0.3rem;">UX Research &nbsp;|&nbsp; Interface Design &nbsp;|&nbsp; Usability Test &nbsp;|&nbsp; Prototyping</div>
+                <a href="#" style="color: #007bff; text-decoration: underline; font-size: 1rem;">Read More</a>
+            </div>
+        </div>
+        <!-- 项目3：CCA Moodle Website Redesign -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/Slide 16_9 - 12.png') }}" alt="CCA Moodle Website Redesign" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem;">CCA Moodle Website Redesign</h3>
+                <div style="color: #888; font-size: 0.98rem; margin-bottom: 0.3rem;">UX Design &nbsp;|&nbsp; Web Design</div>
+                <a href="#" style="color: #007bff; text-decoration: underline; font-size: 1rem;">Read More</a>
+            </div>
+        </div>
+        <!-- 项目4：Treadmill & Ellipsometer Physical Interface Redesign -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/Slide 16_9 - 5.png') }}" alt="Treadmill & Ellipsometer Physical Interface Redesign" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem;">Treadmill & Ellipsometer Physical Interface Redesign</h3>
+                <div style="color: #888; font-size: 0.98rem; margin-bottom: 0.3rem;">UX Research &nbsp;|&nbsp; Interface Design</div>
+                <a href="#" style="color: #007bff; text-decoration: underline; font-size: 1rem;">Read More</a>
+            </div>
+        </div>
+        <!-- 项目5：CitySaga Historical map design -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/Slide 16_9 - 1.png') }}" alt="CitySaga Historical map design" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem;">CitySaga Historical map design</h3>
+                <div style="color: #888; font-size: 0.98rem; margin-bottom: 0.3rem;">UX Research &nbsp;|&nbsp; Interface Design</div>
+                <a href="#" style="color: #007bff; text-decoration: underline; font-size: 1rem;">Read More</a>
+            </div>
+        </div>
+        <!-- 项目6：Myland.5 -->
+        <div style="width: 340px; background: #fafafa; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+            <img src="{{ url_for('static', filename='images/Slide 16_9 - 1.png') }}" alt="Myland.5" style="width: 100%; height: 220px; object-fit: cover;">
+            <div style="padding: 1.2rem 1.2rem 1.5rem 1.2rem; text-align: left; width: 100%;">
+                <h3 style="font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem;">Myland.5</h3>
+                <div style="color: #888; font-size: 0.98rem; margin-bottom: 0.3rem;">UI/UX Design</div>
+                <a href="#" style="color: #007bff; text-decoration: underline; font-size: 1rem;">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- 联系方式 -->
+    <div style="text-align: center; margin-top: 3rem; color: #555;">
+        <div style="font-size: 1.1rem; margin-bottom: 0.5rem;"><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/fionax09" target="_blank">linkedin.com/in/fionax09</a></div>
+        <div style="font-size: 1.1rem;"><b>Email:</b> <a href="mailto:fiona09x@gmail.com">Fiona09x@gmail.com</a></div>
+    </div>
+</section>
+{% endblock %} 

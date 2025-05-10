@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="aboutme-section" style="display: flex; flex-direction: column; align-items: center; margin-top: 3rem;">
+    <img src="{{ url_for('static', filename='images/XUJING.jpg') }}" alt="Profile Photo" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 24px rgba(0,0,0,0.15);">
+    <h1 style="margin-top: 1.5rem; font-size: 2.2rem; font-weight: bold;">Jing Xu</h1>
+    <h2 style="font-size: 1.2rem; color: #666; margin-top: 0.5rem;">Product &amp; UI/UX Designer</h2>
+    <div style="max-width: 700px; margin-top: 2rem; text-align: center; font-size: 1.1rem; color: #333;">
+        <p>
+            I am a passionate designer based in Seattle, specializing in product and UI/UX design. My work focuses on creating seamless, enjoyable, and visually appealing user experiences. With a keen sense of aesthetics and attention to detail, I strive to deliver innovative solutions that truly resonate with users.
+        </p>
+        <p style="margin-top: 1rem;">
+            My design philosophy centers on both appearance and <b>functionality</b>, ensuring every detail provides the <b>best interactive experience</b>. I am always eager to explore new challenges and collaborate on exciting projects.
+        </p>
+    </div>
+    <div style="margin-top: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+        <div><b>Email:</b> <a href="mailto:fiona09x@gmail.com">fiona09x@gmail.com</a> / <a href="mailto:jingx23@uw.edu">jingx23@uw.edu</a></div>
+        <div><b>Phone:</b> 415-999-8666</div>
+        <div><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/fionax09" target="_blank">linkedin.com/in/fionax09</a></div>
+        <div style="margin-top: 1.5rem;">
+            <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank" style="padding: 0.7rem 1.5rem; background: #222; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500;">Download Resume (PDF)</a>
+        </div>
+    </div>
+</section>
+
+<!-- 教育经历 -->
+<div style="max-width: 700px; margin: 3rem auto 0 auto;">
+    <h2 style="font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; text-align: left;">Education</h2>
+    <div style="margin-bottom: 1.2rem;">
+        <b>University of Washington</b> <span style="color:#888;">| Seattle, WA</span> <span style="float:right; color:#888;">Sep 2024 - Mar 2026</span><br>
+        MS Tech Innovation
+    </div>
+    <div>
+        <b>California College of The Arts</b> <span style="color:#888;">| San Francisco, CA</span> <span style="float:right; color:#888;">Jul 2019 - Dec 2023</span><br>
+        BFA Industrial Design
+    </div>
+</div>
+
+<!-- 工作/实习经历 -->
+<div style="max-width: 700px; margin: 3rem auto 0 auto;">
+    <h2 style="font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; text-align: left;">Experience</h2>
+    <!-- 1. Brush Strokes -->
+    <div style="margin-bottom: 1.2rem;">
+        <b>Brush Strokes</b> — Product Design Intern <span style="color:#888;">| Plauen / Nanjing, China</span> <span style="float:right; color:#888;">Mar 2024 – Aug 2024</span>
+        <ul style="margin: 0.5rem 0 0 1.2rem; color: #444; font-size: 1rem;">
+            <li>Led the end-to-end design of campus cultural products, utilizing CAD modeling and digital prototyping to develop functional and visually cohesive solutions.</li>
+            <li>Conducted in-depth user research, applying design thinking methodologies to identify user needs and translate insights into high-fidelity prototypes and manufacturable designs.</li>
+            <li>Collaborated with production, marketing, and engineering teams to balance technical feasibility, brand identity, and user-centric design goals, ensuring seamless product development.</li>
+            <li>Used Figma to design and develop the campus products sales platform for the school.</li>
+        </ul>
+    </div>
+    <!-- 2. UI/UX Design Intern -->
+    <div style="margin-bottom: 1.2rem;">
+        <b>Aproject Factory</b> — UI/UX Design Intern <span style="color:#888;">| Dallas, TX</span> <span style="float:right; color:#888;">May 2023 - Aug 2023</span>
+        <ul style="margin: 0.5rem 0 0 1.2rem; color: #444; font-size: 1rem;">
+            <li>Led the design of MVP mobile applications, creating wireframes, prototypes, and high-fidelity designs using Figma, prioritizing intuitive user experiences.</li>
+            <li>Conducted in-depth user research and created wireframes to improve mobile app usability.</li>
+            <li>Worked with engineering teams to ensure seamless design implementation and optimize user processes and accessibility.</li>
+            <li>Created a scalable design system, reducing design inconsistencies and improving cross-functional collaboration.</li>
+        </ul>
+    </div>
+    <!-- 3. Hofmann (Beijing) Engineering Technology Co., Ltd. -->
+    <div style="margin-bottom: 1.2rem;">
+        <b>Hofmann (Beijing) Engineering Technology Co., Ltd.</b> — Industrial Designer Intern <span style="color:#888;">| Beijing, CHN</span> <span style="float:right; color:#888;">May 2020 - Sep 2020</span>
+        <ul style="margin: 0.5rem 0 0 1.2rem; color: #444; font-size: 1rem;">
+            <li>Collaborated with engineering and marketing teams to align product designs with technical feasibility and market needs.</li>
+        </ul>
+    </div>
+    <!-- 4. ARTOP Design Co., Ltd. -->
+    <div style="margin-bottom: 1.2rem;">
+        <b>ARTOP Design Co., Ltd.</b> — Industrial Designer Intern <span style="color:#888;">| Wuhan, CHN</span> <span style="float:right; color:#888;">Mar 2020 - Apr 2020</span>
+        <ul style="margin: 0.5rem 0 0 1.2rem; color: #444; font-size: 1rem;">
+            <li>Design and prototype action camera concepts, combining market insights and user research.</li>
+            <li>Create detailed CAD models with Rhino and SolidWorks to ensure accuracy and manufacturability.</li>
+            <li>Provide innovative solutions tailored to the target population to enhance product market fit.</li>
+            <li>Perform field tests to verify product performance and user satisfaction.</li>
+        </ul>
+    </div>
+    <!-- 5. Nanjing Origin of Species Co., Ltd. -->
+    <div>
+        <b>Nanjing Origin of Species Co., Ltd.</b> — Industrial Designer Intern <span style="color:#888;">| Nanjing, CHN</span> <span style="float:right; color:#888;">May 2019 - Sep 2019</span>
+        <ul style="margin: 0.5rem 0 0 1.2rem; color: #444; font-size: 1rem;">
+            <li>Responsible for the appearance design, functional design, and product optimization of 3D printing pens.</li>
+            <li>Conducted packaging design, including illustration production and brochure layout of 3D printing pens.</li>
+            <li>Communicated with related departments to confirm requirements, as well as selecting and determining 3D printing consumables.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %} 
